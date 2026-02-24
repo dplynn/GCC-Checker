@@ -179,6 +179,19 @@ INDEX_HTML = """<!doctype html>
       background: #fff3f3; color: #8d2f2f; display: none; font-family: "Trebuchet MS", Verdana, sans-serif;
       white-space: pre-wrap;
     }
+    .site-footer {
+      margin-top: 14px;
+      text-align: center;
+      font-family: "Trebuchet MS", Verdana, sans-serif;
+      font-size: .95rem;
+      color: #4b544d;
+    }
+    .site-footer a {
+      color: var(--brand);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .site-footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -191,6 +204,10 @@ INDEX_HTML = """<!doctype html>
       <div id="grid" class="grid"></div>
       <div id="error" class="error"></div>
     </section>
+    <footer class="site-footer">
+      Created by dplynn |
+      <a href="https://github.com/dplynn/GCC-Checker/tree/main" target="_blank" rel="noopener noreferrer">Repository</a>
+    </footer>
   </main>
   <script>
     let isLoading = false;
